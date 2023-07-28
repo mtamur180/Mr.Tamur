@@ -1,0 +1,16 @@
+h1{
+    color:black;
+    background-color: yellow;
+}
+/*this is paragraph*/
+h3{
+    color:blue;
+    background-color: rgba(12, 217, 231, 0.39);
+}
+h4{
+    color:white;
+    background-color: rgb(40, 40, 41);
+}
+details{
+    color:green;
+}

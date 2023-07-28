@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframe and animation</title>
+    <style>
+        .container{
+            background-color: black;
+            color:aqua;
+            width: 100vw;
+            height: 500px;
+        }
+        .box{
+            background-color: blueviolet;
+            border:2px solid red;
+            border-radius: 15px;
+            width: 200px;
+            height: 50px; 
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top:15px;
+            animation-name: tamur1;
+            animation-duration: 1.5s;
+            /* animation-iteration-count: 4; */
+            animation-iteration-count:infinite;
+
+            /* ease-out ... first fast and then in end slow  */
+            animation-timing-function: ease-out;
+            /* animation-timing-function: ease-in; first slow then fast*/
+            /* animation-timing-function: ease-in-out; first slow then fast and then slow*/
+
+            /* start work after 1 secont */
+            animation-delay: 1s;
+            animation-direction: alternate;
+            /* animation-direction:reverse; */
+            /* animation-timing-function: step-start; */
+
+        }
+        @keyframes tamur1{
+            from{
+                width: 200px;
+            }
+to{
+    width: 400px;
+}
+        }
+        p{
+            top:13px;
+        }
+        .itam{
+            color:rgb(4, 85, 58);
+            text-align: center;
+            justify-content: center;
+            background-color: aquamarine;
+            border:2px solid rgb(209, 138, 138);
+            border-radius:20px;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            /* top:50px; */
+
+            /* shortct key of animation  */
+            /* animation: animation-name,animation-duration, animation-time-function, animation-delay,animation-iteration-count,animation-direction, */
+            animation:tamur2 5s ease-in-out 1s infinite backwards;
+            /* animation-direction: alternate; */
+            }
+            @keyframes tamur2{
+                0%{
+                    top: 0px;
+                    left:0px;
+                }
+                25%{
+                    top: 0px;
+                    left:250px;
+                }
+                75%{
+                    top: 250px;
+                    left:250px;
+                }
+                100%{
+                    top: 250px;
+                    left:0px;
+                }
+
+            }
+                </style>
+</head>
+<body>
+        <div class="container">
+            <div class="box">
+               <p>
+
+                   this is keyframe and animation 
+                </p>
+            </div>
+                <div class="itam">this is funny box</div>
+        </div>
+</body>
+</html>

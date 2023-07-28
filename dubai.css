@@ -1,0 +1,350 @@
+/* logo design */
+.logo4{
+    width: 10px;
+    /* height: 20px; */
+
+    border-radius: 50px;
+}
+/* .container img{
+
+    width: 30px;
+    height: 30px; }*/
+    .logo4 img{
+        position: fixed;
+        width: 82px;
+    border-radius: 50px;
+    margin: -8px 2px;
+    }
+
+    /* navigation  */
+.navigation{
+    display: flex;
+    position: absolute;
+    top: -31px;
+    left: 102px;
+}
+.navigation::before{
+    content: "";
+    position: fixed;
+    top: 2px;
+    background-color: black;
+    width: 80vw;
+  
+    height: 81px;
+    z-index: -1;
+    opacity: 0.6;
+    border-radius: 24px;
+}
+/* .navigation::before {
+    content: "";
+    position: fixed;
+    top: 2px;
+    background-color: black;
+    width: 60vw;
+    padding: 3px 70px;
+    height: 81px;
+    z-index: -1;
+    opacity: 0.6;
+    border-radius: 24px;
+} */
+
+/* list styel  */
+li{
+    /* position:fixed; */
+    list-style: none;
+    padding: 20px 20px;
+    font-size: 1.5rem;s
+    /* color:white; */
+    padding: 37px 29px;
+}
+/* .navigation li{
+    position:fixed;
+    padding: 10px 10px;
+} */
+.itam{
+    padding: 40px 50px;
+}
+.itam a:hover{
+    color: rgb(56, 241, 226);
+font-size: 25px;
+/* background-color: white; */
+border-radius: 50px;
+/* width: 100px; */
+}
+ul{
+    display: flex;
+
+}
+ul li a{
+    color:rgb(59, 187, 176);
+    position: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/* content  */
+.content{
+    width: 60vw;
+    justify-content: center;
+    /* align-items: center; */
+    /* display: flex; */
+    flex-direction: column;
+    text-align: center;
+    
+    padding: 113px 279px;
+    font-size: 1.5rem;
+}
+.content .first{
+    line-height: 56px;
+    /* color:yellow; */
+}
+.content::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../bg3.jpeg);
+    top: -10px;
+    z-index: -1;
+    opacity: 0.6;
+    padding: 74px 65px;
+    margin: -96px -743px;
+        
+}
+
+/* section */
+ .container2{
+    display: flex;
+    padding: 59px 95px;
+    margin: -69px 18px;
+ }
+ .container2::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../bg3.jpeg);
+    /* top: -10px; */
+    z-index: -1;
+    opacity: 0.6;
+    padding: 39px 0px;
+    margin: 300px -127px;
+}
+ 
+ .para {
+    width: 322px;
+    text-align: center;
+    padding: 3px 56px;
+    margin: 68px -4px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: cursive;
+}
+/* .forbg::before{
+    content: "";
+    position: absolute;
+    border-image: url(../bg3.jpeg);
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.6;
+    
+} */
+ 
+/* img decoration  */
+.container2 img{
+    width: 157px;
+    border-radius: 70px;
+}
+
+
+.para::before{
+    content: "";
+    position: absolute;
+    background-color: #1f3442;
+    z-index: -1;
+    opacity: 0.3;
+    width: 330px;
+    height: 471px;
+    padding: 60px 9px;
+    margin: -19px -85px;
+    border-radius: 50px;
+}
+
+/* container3 */
+.container3 input{
+    width: 496px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    font-family: monospace;
+    padding: 3px 25px;
+    margin: 7px 10px;
+    /* color: yellow; */
+    background-color: rgb(110, 169, 179);
+    border-radius: 20px;
+}
+.container3 input:hover{
+    background-color: rgb(136, 226, 240);
+    width: 500px;
+    height:  35px;
+    font-size: 1.2rem;
+}
+
+.container3 textarea{
+    background-color: rgb(110, 169, 179);
+    border-radius: 20px;
+    font-family: monospace;
+}
+.container3 textarea:hover{
+    background-color: rgb(136, 226, 240);
+    width: 550px;
+    height:  112px;
+    font-size: 1.2rem;
+}
+
+.container2 lable{
+    font-size: 36px;
+    font-family: inherit;
+}
+.container3{
+    display: flex;
+    flex-direction: column;
+    width: 97vw;
+    /* justify-content: center; */
+    align-items: center;
+    padding: -23px 11px;
+    margin: -112px 2px;
+    position: relative;
+    top: 100px;
+    color: rgb(226, 230, 24);
+    font-size: 1.5rem;
+}
+.container3::before{
+    content: "";
+    position: absolute;
+    background-image: url(../WhatsApp\ Image\ 2023-06-27\ at\ 1.23.06\ PM\ \(1\).jpeg);
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.6;
+    margin: -125px 29px;
+}
+ 
+.btn{
+    color: white;
+    background-color: rgb(87, 27, 143);
+    width: 548px;
+    height: 36px;
+    padding: -1px 17px;
+    margin: 17px 19px;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: rgb(154, 69, 235);
+    width: 570px;
+    height:  40px;
+    font-size: 1.2rem;
+    
+}
+
+
+ @media(max-width:1341px) {
+
+    /* its for test that is it will work  */
+    /* body{
+        background-color: gold;
+    } */
+     .content {
+        width: 476px;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 145px 175px;
+        font-size: 1.8rem;
+    }
+    .container2 {
+        display: flex;
+         display: inline-block;
+        padding: 5px 112px;
+        margin: -143px 19px;
+    }
+    .para::before {
+        content: "";
+        position: absolute;
+        background-color: #1f3442;
+        z-index: -1;
+        opacity: 0.3;
+        width: 473px;
+        height: 539px;
+        padding: 68px 19px;
+        margin: -26px -174px;
+        border-radius: 50px;
+    }
+    .para {
+        width: 398px;
+        text-align: center;
+        padding: 2px 52px;
+        margin: 75px 9px;
+        color: rgb(0, 0, 0);
+        font-size: 21px;
+        font-family: cursive;
+    }
+    ul {
+        display: flex;
+        padding: 4px 147px;
+    }
+    .logo4 img {
+        position: fixed;
+        width: 82px;
+        border-radius: 50px;
+        margin: -5px 180px;
+    }
+    /* .container2::before {
+        content: "";
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../bg3.jpeg);
+        top: -10px;
+        z-index: -1;
+        opacity: 0.6;
+        padding: 72px 68px;
+        margin: 1186px -281px;
+    } */
+    .content::before {
+        content: "";
+        position: absolute;
+        background-image: url(../bg2.jpeg);
+        z-index: -1;
+        width: 100vw;
+        height: 85vh;
+        opacity: 0.6;
+        margin: -182px -533px;
+    }
+    .container3::before {
+        content: "";
+        position: absolute;
+        background-image: url(../WhatsApp\ Image\ 2023-06-27\ at\ 1.23.06\ PM\ \(1\).jpeg);
+        z-index: -1;
+        width: 105vw;
+        height: 100vh;
+        opacity: 0.6;
+        margin: -480px 12px;
+    }
+    .container2::before {
+        content: "";
+        position: absolute;
+        width: 105vw;
+        height: 100vh;
+        background-image: url(../bg3.jpeg);
+        /* top: -10px; */
+        z-index: -1;
+        opacity: 0.6;
+        padding: 39px 0px;
+        margin: 301px -139px;
+    }
+
+ }
