@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition   </title>
+    <style>
+.container{
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    background-color: violet;
+}
+.box{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    color:black;
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay:1s; */
+
+    /* shortcur key in one line  */
+    /* transition-property, transition-duration,transition-time-function, transition-delay, */
+    transition:all 3s ease-in 0.5s;
+}
+.box:hover{
+    background-color: yellowgreen;
+    width: 300px;
+    height: 300px;
+    border:3px solid red;
+    border-radius: 50px;
+    font-size: 50px;
+    color: aquamarine;
+    justify-content: center; /* this will center in x */
+    align-items: center; /* this will center in y */
+    position: relative;
+    top:50px;
+    left: 50px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            this is box
+        </div>
+    </div>
+</body>
+</html>

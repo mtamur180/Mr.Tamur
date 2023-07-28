@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before After psudo selector</title>
+    <style>
+        body{
+            color: white;
+            /* background-image: url(https://images.unsplash.com/photo-1688296472826-5b59d5854006?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+    opacity: 0.5; */
+        }
+        li{
+            display: flex;
+            padding: 10px 22px
+        }
+        ul{
+            display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* padding: 9px 489px; */
+    font-size: larger;
+    font-family: cursive;
+    font-weight: bold;
+    color: aqua;
+        }
+        section{
+            text-align: center;
+    color: #df5bc2;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* top: 40px; */
+    position: relative;
+    top: 136px;
+            
+        }
+        header::before{
+            content: "";
+            /* background-image: url(https://images.unsplash.com/photo-1688296472826-5b59d5854006?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60); */
+            background-image: url(https://plus.unsplash.com/premium_photo-1663945117116-a4227b0da2f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=700&q=60);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+        }
+        
+          
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="card">Home</li>
+                <li class="card">About</li>
+                <li class="card">Servous</li>
+                <li class="card">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="itam">
+
+        
+        <h2>persnal informataion</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perferendis unde atque itaque totam adipisci error, nulla id ratione voluptatum </p>
+</section>
+    </body>
+</html>

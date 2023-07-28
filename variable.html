@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CSS variable and custom property</title>
+    <style>
+        /* this tag is using for every element */
+        /* for selecting every element  */
+        :root{
+/* tamur1 mean we can use any name of this element  */
+            --tamur1-color:gray;
+            /* many element you can use for that  */
+            --tamur2-color:red;
+            --tamur3-color:pink;
+            --tamur4-color:aqua;
+            /* its max width for element width and heidht  */
+            --maxw:333px;
+            --maxh:500px;
+            /* for name you can use max** mean maxtamur etc  */
+            --maxw2:80px;
+        }
+
+        .container{
+            /* its for declareing file  */
+            max-width: var(--maxw);
+            max-height: var(--maxh);
+            display: flex;
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+
+        }
+        .box{
+max-width: var(--maxw2);
+/* you can use it there and root mn b */
+            --maxw:333px;
+        background-color: var(--tamur1-color);
+        border:2px solid var(--tamur2-color);
+        border-radius: 10px;
+       width: 200px; 
+       height: 200px;
+       color:var(--tamur4-color)
+       
+    }
+
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="box">this is box  </div>
+        </div>
+</body>
+</html>

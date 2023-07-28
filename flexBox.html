@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            border:2px solid black;
+            width:100%;
+            height:500px;
+            display:flex;
+            flex-wrap:wrap;
+            /* flex-wrap: wrap-reverse; */
+            
+
+            /* justify content  */
+                /* justify-content: space-between; only between space*/
+    /* justify-content: space-evenly; everyplace same space */
+    /* justify-content: space-around; only around space*/
+
+    /* position in box  */
+    /* align-items: center; will be in center in height  */
+    /* align-items: flex-end;  will be end in height  */
+    /* align-items: flex-start;  will be top in high/ */
+    /* align-items: stretch;  maybe doubt */
+
+
+
+        }
+        #itam2{
+            flex-grow: 3;
+            flex-basis:19px;
+            /* you can select any element like this and you can grow in increase and disincrea */
+        }
+        #itam4{
+            order: 2;
+            /* which have big value they will transfer to end by value like itam2 have order 3 and itam5 have order 2 so ... in end will be itam 2 and second last itam 5 and other his rules  */
+        }
+
+        .itam{
+            background-color: gray;
+            width: 150px;
+    height: 150px;
+    padding: 20px 20px;
+    margin: 24px 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itam" id="itam1">first box</div>
+        <div class="itam" id="itam2">second box</div>
+        <div class="itam" id="itam3">third box</div>
+        <div class="itam" id="itam4">fourth box</div>
+        <div class="itam" id="itam5">fiveth box</div>
+        <div class="itam" id="itam6">sixth box</div>
+    </div>
+    
+</body>
+</html>

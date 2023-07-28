@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .main{
+            display: flex;
+    text-align: center;
+    padding: 22px 9px;
+    justify-content: center;
+    margin: 15px 5px;
+        }
+        .card{
+            border: 2px solid red;
+    border-radius: 5px;
+    color: goldenrod;
+    padding: 14px 15px;
+    margin: 13px 27px;
+}
+#card1{
+    box-shadow: 30px 30px 27px 10px rgb(233, 54, 54);
+    text-shadow: 13px 11px 2px black;
+}
+#card2{
+    box-shadow: -44px -25px 47px 8px yellow;
+    text-shadow: -8px -14px 3px green;
+}
+#card3{
+    box-shadow: inset -6px 2px 51px -1px green;
+    text-shadow: 4px 9px 5px darkgreen;
+}
+h2{
+    font-size: 43px;
+}
+    </style>
+</head> 
+<body>
+    <div class="main">
+        <div class="card" id="card1">
+            <h2>first </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fuga harum dolore, ea ut inventore necessitatibus est quae, similique earum laborum quisquam pariatur fugit quaerat voluptatibus unde quis sit, iusto possimus asperiores! Ut!</p>
+
+        </div>
+        <div class="card" id="card2">
+            <h2>second head</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt mollitia possimus, dolore provident cumque quam tenetur vel doloribus similique earum, incidunt ipsa! Mollitia atque, architecto nesciunt sequi harum corrupti eligendi eum illo eveniet!</p>
+
+        </div>
+        <div class="card" id="card3">
+            <h2>third head</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita ut facilis eum ducimus dolore iste, inventore nisi voluptas perferendis molestias beatae corporis iusto quos veritatis nulla tempore, itaque molestiae dignissimos nesciunt explicabo. Asperiores?</p>
+        </div>
+
+    </div>
+</body>
+</html>

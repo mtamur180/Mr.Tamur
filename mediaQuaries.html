@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quaries</title>
+    <style>
+        .main{
+            border:4px solid red;
+            width:100vw;
+            height:100vh;
+          
+            color:black;
+        }
+        .box{
+            display: none;
+            font-size: 100px;
+        }
+        @media(max-width:300px){
+            #box1{
+                display:block;
+                color:green;
+                background-color: yellow;
+            }
+        }
+        @media(min-width:300px)and (max-width:500px){
+            #box2{
+                display: block;
+                color:gray;
+                background-color: red;
+            }
+        }
+        @media(min-width:500px)and (max-width:800px){
+            #box3{
+                display: block;
+                color:rgb(128, 128, 128);
+                background-color: rgb(0, 255, 149);
+            }
+        }
+        @media(min-width:800px){
+            #box4{
+                display: block;
+                color:rgb(192, 39, 39);
+                background-color: rgb(119, 0, 255);
+            }
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box" id="box1">i am mobile</div>
+        <div class="box" id="box2">i am tablet</div>
+        <div class="box" id="box3">i am laptop</div>
+        <div class="box" id="box4">i am computer</div>
+    </div>
+</body>
+</html>

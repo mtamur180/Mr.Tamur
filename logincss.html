@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form </title> 
+    <form action="backhend.php">
+    <style>
+        body{
+            background-color:rgb(6, 55, 110);
+        }
+        h2,h3,span{
+            color:white;
+        }
+        .span4{
+            color:rgb(19 253 201 / 92%);
+        }
+        
+        
+        #span2{
+       position:  relative;right: 90px;
+        }
+        #span2:hover{
+            color: #d48a1b;
+
+        }
+        .span3:hover{
+            color:  #d48a1b;
+
+        }
+        #reset{
+       position:  relative;right: 37px;
+       background-color: #5f71e3;
+       color: white;
+        }
+        .span3{
+            position:  relative;right: 90px;
+        }
+        #username,#password{
+           width: 270px;
+           background-color: #002ba0;
+        }
+        #username:active{
+            background-color: #e04fd9;
+        }
+        #password:active{
+            background-color: #e04fd9;
+        }
+
+        #forgot{
+            position:relative;left: 37px;
+            background-color: #039997;
+            color: white;
+        }
+        #login{
+            
+            font-size: 138%;
+            color: white;
+            background-color: black;
+            width: 280px;
+    height: 33px;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    
+        }
+        #login:hover{
+            color: #0b17c4;
+            background-color: #2994c5;
+        }
+        #login:active{
+            color: #991301;
+            background-color: #790688;
+        }
+        .glow{
+            position:  relative;right: 90px;
+            color: #ff5685;
+        }
+        .glow:hover{
+            color: #5800a0;
+        }
+        .glow:active{
+            color: #e04fd9;
+        }
+        div{
+             
+    border-radius: 4em;
+    height: 430px;
+    width: 30%;
+    text-align: center;
+    position: relative;left: 390px; 
+    position: relative;top: 80px;
+        }
+    </style>
+</head>
+<body> 
+    <div style="background-color: rgb(142, 14, 228);">
+    <center >
+        <h2 style="line-height: 5em;">Login from using HTML and CSS</h2>
+        
+        
+    </center>
+    <center><h3 style="line-height: 0.02em;">Sign in</h3>
+    <span style="line-height: 4em;" class="span4" >Sign in with your username and password</span>
+    <br>
+    <label for="username" class="glow">Your Username</label>
+    <span id="span2"></span><br>
+    <input type="username" name="myname"   id="username"> <br>
+        <br><label for="password" class="glow">Your password</label>
+        <span class="span3"></span>
+        <br><input type="password"  name="password" id="password"> <br>
+        <br><input type="reset" value="Reset Now" id="reset">
+        <input type="forget" value="Forgot Password?" style="width: 110px;"  id="forgot">
+        <br><br>
+        <!-- <input type="login" value="Login" id="login"> -->
+        <button id="login">Login</button>
+        
+        <br>  
+    </center></div>
+</form>
+</body>
+</html>

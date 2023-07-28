@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        div>p {
+            color: yellow;
+            background-color: black;
+        }
+
+        div+p {
+            color: green;
+        }
+
+        ul p {
+            color: blue;
+        }
+
+        h1 p {
+            color: pink;
+        }
+
+        div h2 p {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <p>this is yellow line </p>
+        <h1>
+            <p>this is pink line </p>
+        </h1>
+        <ul>
+            <li>
+                <p>this is blue line</p>
+            </li>
+        </ul>
+        <div>
+            <h2>
+                <p>this is brown color line </p>
+            </h2>
+        </div>
+    </div>
+    <p>this is green line </p>
+</body>
+
+</html>
