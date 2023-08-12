@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS time set clear time</title>
+</head>
+<body>
+    <div class="contianer">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, autem. Animi, soluta necessitatibus illo, explicabo distinctio rerum facilis accusamus, quisquam enim officia voluptates. Reprehenderit quaerat iste, beatae nulla natus sunt!</p>
+        <div>this is pakistani <span id="time"></span></div>
+    </div>
+    <script>
+        // function greet(name){ 
+        //     console.log("hello world "+name);
+        // }
+        // setTimeout(greet,2000," harry ");
+
+
+
+        // data and time function
+        // function displayTime(){
+        //     time= new Date();
+        //     console.log(time);
+        //     document.getElementById('time').innerHTML=time;
+        // }
+        // setInterval(displayTime,1000);
+        
+        function displayTime(){
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(displayTime,5000);
+    </script>
+</body>
+</html>

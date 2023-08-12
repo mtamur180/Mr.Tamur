@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+<style>
+    .btn{
+        background-color: brown;
+        width: 90px;
+        height: 30px;
+        border-radius: 20px;
+        cursor: pointer;
+display: inline-block;
+    }
+    #btn{
+        display: block;
+    }
+    #Menu{
+        width: 90px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: rgb(71, 197, 128);
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestiae eum vero, rerum quibusdam saepe quo aliquid ipsa architecto numquam deserunt possimus cupiditate voluptatem? Adipisci deleniti blanditiis veniam dolor non?</p>
+        <button class="btn" id="btn" onclick="toggleHide()">show/hide</button>
+
+    </div>
+    <div id="nav">
+        <ul id="list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Servies</li>
+            <li>Skills</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <button id="Menu" onclick="toggleHide()">Menu</button>
+<script>
+    //  function toggleHide(){
+    //     let btn=document.getElementById('btn');
+    //     let para=document.getElementById('para');
+    //     if(para.style.display != 'none'){
+    //         para.style.display='none';
+    //     }
+    //     else{
+    //         para.style.display='block';
+    //     }
+    // }
+    
+     function toggleHide(){
+        let Menu=document.getElementById('Menu');
+        let list=document.getElementById('list');
+        if(list.style.display != 'none'){
+            list.style.display='none';
+        }
+        else{
+            list.style.display='block';
+        }
+    }
+    
+    // let para=document.getElementById('para');
+    // para.addEventListener('mouseout',function run(){
+    //     alert('Mouse Inside')
+    // })
+    // let btn=document.getElementById('btn');
+    // btn. addEventListener('mouseover',function run(){
+    //     alert('Mouse Over')
+    // })
+
+
+
+</script>
+</body>
+</html>

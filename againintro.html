@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Again practice of js</title>
+    <style>
+        button{
+            width: 400px;
+            height: 100px;
+            background-color: gray;
+            /* border-radius: 50px 0; */
+            color: white;
+            /* display: block; */
+            /* justify-content: center; */
+            align-items: center;
+            border: none;
+        }
+        .btn{
+            display: block;
+            /* margin: auto; */
+            text-align: center;
+        }
+        button:hover{
+            opacity: 0.7;
+        }
+        
+        .btn1{
+            border-radius: 50px 0 0 0;
+            
+        }
+        .btn2{
+            border-radius: 0 0 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">this is </div>
+    <div class="btn">
+
+        <button class="btn1">Enter Your namess:Hamid</button>
+        <button id="bttn2" class="btn2">Enter Your Age</button>
+    </div>
+    <script>
+        let nmsty =document.querySelector('button');
+        nmsty.addEventListener('click',inputmsg);
+
+        function inputmsg(){
+            let name=prompt('Enter Your Name');
+            nmsty.textContent='Enter Your Name:    '+name;
+        }
+        let age =document.getElementById('bttn2');
+        age.addEventListener('click',inputage);
+
+        function inputage(){
+            let ageis=prompt('Enter Your Age:     ');
+            age.textContent='Enter Your Age:'+ageis;
+        }
+
+        
+    </script>
+</body>
+</html>

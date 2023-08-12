@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String function</title>
+</head>
+<body>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae laboriosam esse deleniti maxime ipsa enim odio, dolores quo praesentium laborum impedit sapiente officia ea illum sed nam qui aperiam reiciendis tempore quam consequuntur animi? Molestiae, officiis incidunt numquam quia dignissimos, quasi magni, omnis adipisci libero non nulla delectus esse itaque.</span>
+
+    <script>
+        // var str= "this is heading";
+        // var position= str.indexOf('is');
+        // var position= str.lastIndexOf('head')
+        // console.log(position);
+        // var x=new String("this is heading");
+        // console.log(x);
+
+
+        var stag= "thereismany heading";
+        // its for both element as positive and nagitive
+        // and its start from 0 to second last of end figure   
+        var str= stag.slice(1,6);
+        console.log(str);
+
+        // and its just for positive value like +1,+4,
+        // its start from 0 to 4 figure
+        var stran= stag.substring(1,4);
+        console.log(stran);
+        // its for length mean 1 to 5 etc not from 0 
+        // its start from 1 to 7 figure
+        var stren= stag.substr(1,7);
+        console.log(stren);
+
+
+        // var stage = "this is headding";
+        // var replaced= stage.replace('headding','tamur');
+        // console.log(stage);
+        // console.log(replaced);
+
+
+        // var span= "thsi is my introduction"
+        // var replacee= span.replace('my','your')
+        // console.log(replacee)
+
+
+        // var str= "This is new Hadding"
+        // console.log(str.toUpperCase());
+        // console.log(str.toLowerCase())
+
+
+        // its add for new line as work + mean positive 
+        var stage= "this is heading of "
+        var news= stage.concat('tamur web')
+        console.log(news);
+
+
+
+        var whitespace= "     this is       not      heading       "
+        console.log(whitespace)
+        // its hide space from around 
+        console.log(whitespace.trim());
+
+
+        var stra= "this is head"
+        // it will tel us his number 
+        var char1= stra.charAt(3)
+        console.log(char1)
+        // and it will tell his code 
+        var char2 = stra.charCodeAt(2);
+        console.log(char2);
+
+        //  its look like as slice 
+        console.log(stra[3])
+        console.log(stage[9])
+    </script>
+</body>
+</html>

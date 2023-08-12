@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data and time   </title>
+    <style>
+        #time{
+            color: rgb(222, 145, 44);
+            background-color: aqua;
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 4px;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Today pakistan Time</h1><br>
+ <div id="Data"></div>
+        <span id="time">pakistan</span><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, id vitae. Corporis consequatur quae, accusantium libero nobis aliquid vel eius fuga eligendi facere quam neque harum sunt et earum? Ut.</p>
+    </div>
+
+    <script>
+        let now= new Date();
+        console.log(now)
+
+
+        let time1= new Date(1000);
+        console.log(time1)
+
+
+        let time2= new Date(5000);
+        console.log(time1)
+
+        let newdata=new Date("2025-06-16");
+        console.log(newdata)
+
+
+        // new data (year,month,date,hours,month,second,millisecond)
+        let mybirthdate=new Date(2023,6,16,10,0,5,5);
+        console.log(mybirthdate)
+
+
+        
+
+        let year=now.getFullYear();
+        console.log("this is year",year);
+
+        let month=now.getMonth();
+        console.log("this is month",month);
+
+        let data=now.getDate();
+        console.log("this is date",data);
+
+        let hours=now.getHours();
+        console.log("this is hours",hours);
+
+
+        let dt=mybirthdate.setDate(15);
+        console.log(dt);
+
+        let mn=mybirthdate.setMonth(5);
+        console.log(mn);
+
+        setInterval(updateTime,1000);
+        function updateTime(){
+            time.innerHTML=new Date();
+        }
+
+    </script>
+</body>
+</html>
