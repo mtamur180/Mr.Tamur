@@ -1,0 +1,24 @@
+ ul{
+    display: flex;
+    color: white;
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+    /* position: fixed; */
+    /* top: 0px; */
+
+ }
+ li{
+    margin: 10px ;
+    list-style: none;
+
+ }
+ input{
+    height: 20px;
+    margin-top: 5px;
+    
+ }
+ ,nav{
+    position: fixed;
+    top: 0px;
+ }

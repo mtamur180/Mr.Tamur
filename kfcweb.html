@@ -1,0 +1,964 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  KFC Pakistan</title>
+    <!-- menu icon google fants  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- font family google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:ital,wght@1,300&family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+<!-- bootstrap social media icon  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+        :root{
+            --redcol-color:rgb(211, 47, 47);
+            --lightblack-color:#222020;
+            --lightwood-color:#22201f;
+            --nationalfont-font-family:'Libre Baskerville', serif;
+
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        .nav{
+
+
+            width: 100%;
+    height: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:black;
+    z-index: 5;
+        }
+        .menu-icon{
+            position: relative;
+    top: 28px;
+    left: 4%;
+    font-size: 2.3rem;
+        }
+        .kfc-logo{
+            position: relative;
+    top: 28px;
+    left: 65px;
+        }
+        .delvry{
+
+            display: inline-block;
+    width: 151px;
+    height: 44px;
+    position: relative;
+    top: 23px;
+    left: 6%;
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--redcol-color);
+    border-radius: 6px;
+        }
+        .delivery-man{
+            width: 30;
+    position: relative;
+    top: 2px;
+    left: 0;
+        }
+        .delvry span{
+            position: relative;
+    top: -6px;
+    font-weight: 500;
+    font-size: 15px;
+        }
+        .pic-btn{
+            display: inline-block;
+    width: 151px;
+    height: 47px;
+    position: relative;
+    top: 15px;
+    left: 7%;
+    background-color: #222020;
+    color: white;
+    border: none;
+    border-radius: 6px;
+        }
+        .pickup-hand{
+            width: 26px;
+    position: relative;
+    top: 5px;
+    left: -34px;
+        }
+        .pickup{
+            position: relative;
+    top: -13px;
+    font-weight: 500;
+    font-size: 15px;
+    left: 8px;
+        }
+        .bucket-value{
+            position: relative;
+    left: 58%;
+    top: 13px;
+    border: none;
+        }
+        .bucket-value::before{
+            content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-image: url(bucket-filled.d2ad11819eca0f28a8ac.svg);
+    top: -17px;
+    left: -19px;
+    z-index: -1;
+        }
+.login-btn{
+    display: inline-block;
+    width: 74px;
+    height: 40px;
+    position: relative;
+    top: 14px;
+    left: 60%;
+    background-color: rgb(211, 47, 47);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+/* home page  */
+.home-pic{
+    position: relative;
+    top: 100px;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+}
+.reorder{
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    position: relative;
+    top: 116px;
+    left: 25%;
+    background-color: rgb(211, 47, 47);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+/* explore menu  */
+.ex-menu{
+    width: 90%;
+    height: 400;
+    position: relative;
+    top: 165px;
+    left: 5%;
+}
+.ex-menu img{
+    width: 180px;
+    /* transition: all 0.5s ease 0s; */
+}
+/* .ex-menu img:hover{
+    width: 200px;
+} */
+
+.explore-name{
+    font-size: 1.8rem;
+    font-weight: 900;
+    /* font-family: National2CondensedBold; */
+    font-family: none;
+}
+.explore-name::after{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 3px;
+    background-color: rgb(211, 47, 47);
+    top: 31px;
+    left: 0px;
+}
+.explore-ul{
+    display: flex;
+    list-style: none;
+    position: relative;
+    top: 40px;
+    flex-wrap: wrap;
+}
+.explore-ul li{
+    /* width: 220px; */
+    margin: 15px;
+    border: none;
+    border-radius: 50% 50% 3%;
+    background: #22201f;
+    position: relative;
+    min-width: 180px;
+    max-width: 300px;
+    flex-grow: 2;
+    top: 0px;
+    transition: all 0.5s ease 0s;
+}
+.explore-ul li:hover{
+    top:  -15px;
+}
+.explore-ul li span{
+    text-align: center;
+    display: block;
+}
+.explore-ul .first >span::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    top: 175px;
+    left: 60px;
+    border: 2px solid rgb(211, 47, 47);
+    border-radius: 5px;
+}
+.explore-ul .second>span::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+     top: 175px;
+    left: 33.5%;
+    border: 2px solid rgb(211, 47, 47);
+    border-radius: 5px;
+}
+.explore-ul .third >span::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+     top: 175px;
+    left: 35.6%;
+    border: 2px solid rgb(211, 47, 47);
+    border-radius: 5px;
+}
+.explore-ul .fourth >span::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+     top: 175px;
+     left: 33%;
+    border: 2px solid rgb(211, 47, 47);
+    border-radius: 5px;
+}
+.explore-ul .fifth> span::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    top: 28px;
+    left: 39%;
+    border: 2px solid rgb(211, 47, 47);
+    border-radius: 5px;
+}
+
+.explore-ul li .last{
+    position: relative;
+    top: -30px;
+}
+.hole{
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    top: 25px;
+    left: 86%;
+}
+.back-icon{
+    display: inline-block;
+    font-size: 1rem;
+    position: relative;
+    top: 120px;
+    background: #652d2d;
+    left: -9px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 2px 5px;
+    margin: 0px 0px;
+    width: 20px;
+}
+.next-icon:hover{
+    background: #942929;
+}
+.next-icon{
+    display: inline-block;
+    font-size: 1.4rem;
+    position: relative;
+    top: 123px;
+    background: #ab2d2d;
+    left: 2px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 0px 0px;
+    /* margin: 0px 0px; */
+    width: 20px;
+}
+/* best saller */
+.best-saller{
+    position: relative;
+    top: 150px;
+    left: 5%;
+    display: inline-block;
+}
+.best-saller .saller-name{
+    font-size: 25px;
+    font-weight: 900;
+    /* font-family: National2CondensedBold; */
+    font-family: var(--nationalfont-font-family);
+    text-transform: uppercase;
+    position: relative;
+    top: -5px;
+    left: 15px;
+}
+.best-saller .saller-name::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 3px;
+    background-color: rgb(211, 47, 47);
+    top: 31px;
+    left: 0px;
+}
+.saller-ul{
+    display: flex;
+    flex-wrap: wrap;
+list-style: none;
+overflow: hidden;
+}
+.saller-ul li{
+    margin: 15px;
+    background-color: var(--lightwood-color);
+    max-width: 290px;
+overflow: hidden;
+}
+.saller-ul li .head-red-box{
+    position: relative;
+    top: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.saller-ul li .red-box{
+    display: inline-block;
+    width: 15px;
+    height: 22px;
+    background-color: var(--redcol-color);
+    /* position: relative; */
+    margin: 4px;
+
+}
+ .saller-ul li .item-value{
+    display: flex;
+    position: relative;
+    top: 40px;
+    left: 208px;
+    width: 81px;
+    height: 27px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--redcol-color);
+}
+.saller-ul li .item-value::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    /* background-color: var(--redcol-color); */
+    top: 0px;
+    /* border-color: var(--redcol-color); */
+    left: -8px;
+    border-left: 8px solid transparent;
+    border-top: 13px solid var(--redcol-color);
+    border-bottom: 14px solid var(--redcol-color);
+    border-right: 8px solid var(--redcol-color);
+}
+.saller-ul li .item-value .value-rs{
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    top: 5px;
+}
+.saller-ul li .item-value .value-money{
+    font-size: 21px;
+    position: relative;
+    top: -1px;
+    left: 3px;
+    font-weight: 500;
+}
+.saller-ul li img{
+    width: 290px;
+    position: relative;
+    top: 10px;
+    transition: all 0.5s ease 0s;
+    /* padding: 0px 10px; */
+    left: 1px;
+}
+.saller-ul li img:hover{
+    scale: 1.2;
+    /* padding: 0px 0px; */
+    /* width: 300px; */
+    /* top: 5px; */
+    /* left:-2px; */
+    /* right: 5px; */
+}
+.saller-ul li .item-name{
+    /* font-family: 'Libre Baskerville', serif; */
+    font-family: var(--nationalfont-font-family);
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Victor Mono', monospace; */
+position: relative;
+    top: 35px;
+    left: 20px;
+    font-weight: 500;
+}
+
+@media only screen and (min-width:500px) and (max-width:1000px){
+    body{
+        /* background-color: lightblue; */
+    }
+    .menu-icon {
+    position: relative;
+    top: 23px;
+    left: 7%;
+    font-size: 2rem;
+}
+.kfc-logo {
+    position: relative;
+    top: 22px;
+    left: 65px;
+    width: 52px;
+}
+.delvry {
+    display: inline-block;
+    width: 125px;
+    height: 40px;
+    position: relative;
+    top: 23px;
+    left: 9%;
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--redcol-color);
+    border-radius: 6px;
+}
+.pic-btn {
+    display: inline-block;
+    width: 125px;
+    height: 40px;
+    position: relative;
+    top: 15px;
+    left: 10%;
+}
+.pic-btn {
+    display: inline-block;
+    width: 125px;
+    height: 40px;
+    position: relative;
+    top: 15px;
+    left: 10%;
+}
+.bucket-value {
+    position: relative;
+    left: 38%;
+    top: 15px;
+    border: none;
+    /* right: -42%; */
+}
+.login-btn {
+    display: inline-block;
+    width: 74px;
+    height: 37px;
+    position: relative;
+    top: 17px;
+    left: 41%;
+    background-color: rgb(211, 47, 47);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+}
+.explore-ul li {
+    /* width: 220px; */
+    margin: 15px;
+    border: none;
+    border-radius: 50% 50% 3%;
+    background: #22201f;
+    position: relative;
+    min-width: 180px;
+    height: 200px;
+    max-width: 220px;
+    flex-grow: 2;
+    top: 0px;
+    transition: all 0.5s ease 0s;
+}
+.best-saller {
+    position: relative;
+    top: 350px;
+    left: 5%;
+    display: inline-block;
+}
+.saller-ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+}
+/* for all mobile devices */
+@media only screen and (min-width:280px ) and (max-width:480px){
+    body{
+        /* background-color: lightcoral; */
+    }
+    .nav {
+    width: 100%;
+    height: 60px;
+    }
+    .menu-icon {
+        position: relative;
+    top: 15px;
+    left: 2%;
+    font-size: 1.5rem;
+}
+.kfc-logo {
+    position: relative;
+    top: 16px;
+    left: 3px;
+    width: 45px;
+}
+.delvry {
+    display: inline-block;
+    width: 75px;
+    height: 30px;
+    position: relative;
+    top: 13px;
+    left: 1%;
+}
+.pic-btn {
+    display: inline-block;
+    width: 75px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    left: 1%;
+}
+
+.delivery-man {
+    width: 20px;
+    position: relative;
+    top: 2px;
+    left: 0px;
+}
+.pickup-hand{
+    width: 20px;
+    position: relative;
+    top: 4px;
+    left: -23px;
+}
+    .delvry span {
+    position: relative;
+    top: -5px;
+    left: -1px;
+    font-weight: 200;
+    font-size: 8px;
+}
+.pickup{
+    position: relative;
+    top: -12px;
+    left: 5px;
+    font-weight: 200;
+    font-size: 10px;
+}
+.bucket-value {
+    position: relative;
+    left: 5%;
+    top: 13px;
+    border: none;
+    background: transparent;
+    /* color: white; */
+}
+.bucket-value::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: -12px;
+    left: -14px;
+    z-index: -1;
+    /* background-color: blue; */
+    background-image: url(bucket-filled.d2ad11819eca0f28a8ac.svg);
+}
+.login-btn {
+    display: inline-block;
+    width: 50px;
+    height: 27px;
+    position: relative;
+    top: 12px;
+    left: 8%;
+    background-color: rgb(211, 47, 47);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 100;
+    font-size: 10px
+}
+.home-pic {
+    position: relative;
+    top: 60px;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    right: 0px;
+}
+.reorder {
+    display: inline-block;
+    width: 50%;
+    height: 30px;
+    position: relative;
+    top: 70px;
+    left: 25%;
+    background-color: rgb(211, 47, 47);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-weight: 100;
+    font-size: 12px;
+}
+.explore-name {
+    font-size: 1rem;
+    font-weight: 400;
+    /* font-family: National2CondensedBold; */
+    font-family: none;
+}
+.ex-menu {
+    width: 90%;
+    /* height: 400; */
+    position: relative;
+    top: 90px;
+    left: 5%;
+}
+.explore-name::after {
+    content: "";
+    position: absolute;
+    width: 59px;
+    height: 2px;
+    background-color: rgb(211, 47, 47);
+    top: 17px;
+    left: 0px;
+}
+.explore-ul li {
+    /* width: 220px; */
+    height: 130px;
+    margin: 5px;
+    border: none;
+    border-radius: 50% 50% 3%;
+    background: #22201f;
+    position: relative;
+    min-width: 90px;
+    max-width: 120px;
+    flex-grow: 2;
+    top: 0px;
+
+    transition: all 0.5s ease 0s;
+}
+.ex-menu img {
+    width: 120px;
+    position: relative;
+    top: 7px;
+    /* transition: all 0.5s ease 0s; */
+}
+.explore-ul li span {
+    text-align: center;
+    display: block;
+    font-size: 11px;
+    position: relative;
+    top: 2px;
+}
+.explore-ul .first >span::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    top: 15px;
+    left: 40px;
+    border: 1.9px solid rgb(211, 47, 47);
+    border-radius: 5px;
+}
+.explore-ul .second >span::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    top: 15px;
+    left: 40px;
+    border: 1.9px solid rgb(211, 47, 47);
+    border-radius: 5px;
+}
+.explore-ul .third>span::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    top: 15px;
+    left: 40px;
+    border: 1.9px solid rgb(211, 47, 47);
+    border-radius: 5px;
+}
+.explore-ul .fourth >span::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    top: 15px;
+    left: 40px;
+    border: 1.9px solid rgb(211, 47, 47);
+    border-radius: 5px;
+}
+.explore-ul .fifth>span::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    top: 15px;
+    left: 40px;
+    border: 1.9px solid rgb(211, 47, 47);
+    border-radius: 5px;
+}
+.back-icon {
+    display: inline-block;
+    font-size: 1rem;
+    position: relative;
+    top: 60px;
+    background: #652d2d;
+    left: -9px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 2px 5px;
+    margin: 0px 0px;
+    width: 20px;
+}
+.explore-ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    top: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.next-icon {
+    display: inline-block;
+    font-size: 1.4rem;
+    position: relative;
+    top: 70px;
+    background: #ab2d2d;
+    left: 2px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 0px 0px;
+    /* margin: 0px 0px; */
+    width: 20px;
+}
+
+/* best saller started */
+.best-saller {
+    position: relative;
+    top: 180px;
+}
+.best-saller .saller-name {
+    font-size: 15px;
+    font-weight: 100;
+    /* font-family: National2CondensedBold; */
+    font-family: var(--nationalfont-font-family);
+    text-transform: uppercase;
+    position: relative;
+    top: 0px;
+    left: 15px;
+}
+.best-saller .saller-name::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: rgb(211, 47, 47);
+    top: 18px;
+    left: 0px;
+}
+.saller-ul li {
+    margin: 10px;
+    background-color: var(--lightwood-color);
+    max-width: 290px;
+    overflow: hidden;
+}
+.saller-ul li img {
+    width: 150;
+    position: relative;
+    top: 10px;
+    transition: all 0.5s ease 0s;
+    /* padding: 0px 10px; */
+    left: 1px;
+}
+.saller-ul li .red-box {
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    background-color: var(--redcol-color);
+    /* position: relative; */
+    margin: 2px;
+}
+.saller-ul li .item-name {
+    /* font-family: 'Libre Baskerville', serif; */
+    font-family: var(--nationalfont-font-family);
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Victor Mono', monospace; */
+    position: relative;
+    top: 20px;
+    left: 7px;
+    font-weight: 100;
+    font-size: 9px;
+}
+.saller-ul li .item-value {
+    display: flex;
+    position: relative;
+    left: 109px;
+    width: 42px;
+    width: 50px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--redcol-color);
+}
+.saller-ul li .item-value .value-rs {
+    font-size: 10px;
+    font-weight: 100;
+    position: relative;
+    top: 3px;
+}
+.saller-ul li .item-value .value-money {
+    font-size: 13px;
+    position: relative;
+    top: -1px;
+    left: 1px;
+    font-weight: 500;
+}
+.saller-ul li .item-value::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    /* background-color: var(--redcol-color); */
+    top: 0px;
+    /* border-color: var(--redcol-color); */
+    left: -6px;
+    border-left: 6px solid transparent;
+    border-top: 10px solid var(--redcol-color);
+    border-bottom: 10px solid var(--redcol-color);
+    border-right: 6px solid var(--redcol-color);
+}
+
+
+}
+ </style>
+</head>
+<body>
+    <form action="backend.php">
+    <div class="container">
+        <!-- navbar -->
+        <div class="nav">
+            <span class="material-symbols-outlined menu-icon">
+                menu
+                </span>
+                <img src="download.png" alt="KFC" class="kfc-logo">
+
+
+                    <button class="delvry">
+
+                        <img src="Delivery.793adbaa710baf75ba78.png" alt="DELIVERY MAN" class="delivery-man">
+                        <span class="delivery">DELIVERY</span>
+                    </button>
+
+                    <button class="pic-btn">
+
+                        <img src="pickup.47bb874f83ea6acb5a47.png" alt="" class="pickup-hand">
+                        <div class="pickup">PICKUP</div>
+                    </button>
+                <button class="bucket-value">0</button>
+                <!-- <img src="bucket-filled.d2ad11819eca0f28a8ac.svg" alt="" class="bucket"> -->
+                <button class="login-btn">LOGIN</button>
+
+        </div>
+        <!-- HOME PIC AND BUTTON  -->
+        <div class="home-page">
+            <img src="c7dfa7d0-f483-11ed-a370-c701cfd1fb3c-1920-x-420banner_desktop_image-2023-05-17072354.jpeg" alt="" class="home-pic">
+            <button class="reorder">REORDER</button>
+        </div>
+
+        <!-- explure menu -->
+            <div class="ex-menu">
+            <h1 class="explore-name"> EXPLORE MENU</h1>
+            <ul class="explore-ul">
+                <span class="material-symbols-outlined back-icon">
+                    arrow_back_ios
+                    </span>
+                <li class="first"><img src="value.png" alt="" class="value"><span>EveryDay Value <span class="hole"></span></span></li>
+                <li class="second"><img src="ala.png" alt="" class="ala"><span>Ala-Carte-&-Combos<span class="hole"></span></span></li>
+                <li class="third"><img src="signature.png" alt="" class="signature"><span>Signature-Boxes<span class="hole"></span></span></li>
+                <li class="fourth"><img src="sharing.png" alt="" class="sharing"><span>Sharing<span class="hole"></span></span></li>
+                <li class="fifth"><img src="snacks.png" alt="" class="snacks"><span class="last">Snacks-&-Beverages<span class="hole"></span></span></li>
+                <span class="material-symbols-outlined next-icon">
+                    navigate_next
+                    </span>
+            </ul>
+        </div>
+
+        <!-- best saller -->
+        <div class="best-saller">
+            <h1 class="saller-name">best sallers</h1>
+            <ul class="saller-ul">
+
+                <li class="no-1"><span class="head-red-box">
+                    <span class="red-box"></span><span class="red-box"></span><span class="red-box"></span></span>
+                    <h4 class="item-name">Kurunch Burger</h4>
+                     <div class="item-value"><h5 class="value-rs">Rs</h5><h5 class="value-money">270</h5></div>
+                     <img src="burger.png" alt="" class="burger-img">
+                </li>
+
+                <li class="no-2"><span class="head-red-box"><span class="red-box"></span><span class="red-box"></span><span class="red-box"></span>
+                    </span><h4 class="item-name">Hot Wings Bucket</h4>
+                     <div class="item-value"><h5 class="value-rs">Rs</h5><h5 class="value-money">610</h5></div>
+                     <img src="snacks.png" alt="" class="wings-img"></li>
+
+                <li class="no-3"><span class="head-red-box"><span class="red-box"></span><span class="red-box"></span><span class="red-box"></span>
+                    </span><h4 class="item-name">Mghity Zinger</h4>
+                     <div class="item-value"><h5 class="value-rs">Rs</h5><h5 class="value-money">700</h5></div>
+                     <img src="zinger.png" alt="" class="zinger-img"></li>
+
+                <li class="no-4"><span class="head-red-box"><span class="red-box"></span><span class="red-box"></span><span class="red-box"></span>
+                    </span><h4 class="item-name">Krunch Combo</h4>
+                     <div class="item-value"><h5 class="value-rs">Rs</h5><h5 class="value-money">520</h5></div>
+                     <img src="combo.png" alt="" class="burger-img"></li>
+
+            </ul>
+
+        </div>
+
+        <div class="contact-us">
+            <img src="download.png" alt="">
+            <div class="logo-end">
+                <!-- Facebook -->
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg> -->
+              <!-- youtube -->
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+              </svg> -->
+              <!-- instagram  -->
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg> -->
+
+            </div>
+
+        </div>
+    </div>
+</form>
+</body>
+</html>

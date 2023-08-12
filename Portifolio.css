@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    /* background-color: rgb(59, 54, 54); */
+    background-color: black;
+    height: 200vh;
+
+}
+#home::before{
+    content: "";
+    /* position: absolute; */
+    position: fixed;
+    width: 150%;
+    height: 100vh;
+    /* background-image: url(/removebg-.png); */
+    /* background-image: url(/IMG_20230315_233002_632.jpg); */
+    /* background-image: url(/bg.remove.PNG); */
+    /* background-image: url(/Picsart_23-01-23_22-07-49-856.png); */
+    /* background-image: url(/PhotoRoom-20221126_061825.png); */
+
+    background-image: url(/photo\ room\ without\ bg.png);
+    /* background:url(/The\ Feeling\ Love\ Mashup\ 2022\ _\ Sidhu\ Moosewala\ _\ Ap\ Dhillon\ _\ B\ Praak\ _\ Mahesh\ Suthar\ _\ Sunny\ Hassan\(360P\).mp4); */
+    z-index: -1;
+    background-size: cover;
+    top: 30px;
+    left: -17%;
+
+}
+.home .skill{
+    display: inline-block;
+    position: relative;
+    top: 208px;
+    left: 157px;
+    font-size: 21px;
+    font-family: inherit;
+    color: #857dbc;
+    transition: all .5s ease 0s;
+}
+.home .skill:hover{
+    color: #6a52f1;
+
+}
+.home .name{
+    display: inline-block;
+    position: relative;
+    top: 345px;
+    left: -189px;
+    font-size: 3.2rem;
+    width: 514px;
+    color: wheat;
+    text-shadow: 6px 6px 8px #579c91;
+    transition: all 1s ease 0s;
+}
+
+.home .name:hover{
+    /* color: rgb(236, 165, 32); */
+    opacity: 0.7;
+    /* text-shadow: 4px 4px 10px white; */
+
+}
+.home .name .tamur {
+    color: rgb(184 11 66);
+    display: inline-block;
+    width: 200px;
+}
+.home .name .pakistan {
+    color: green;
+}
+.nav{
+    color: white;
+}
+.nav{
+    display: inline-block;
+    position: fixed;
+    top: 12px;
+    right: 81px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.navbar-logo::before{
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 79px;
+    background-color: rgb(44 45 64);
+    z-index: 0;
+    top: 0px;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav ul li{
+    height: 45px;
+    margin: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+    /* overflow: hidden; */
+    /* display: none; */
+}
+
+.nav ul li:hover{
+    /* position: absolute; */
+    /* top: 10px; */
+    /* display: none; */
+    
+    
+    
+}
+.menu-icon{
+    color: white;
+    position: fixed;
+    top: 25px;
+    right: 46px;
+    font-size: 35px;
+    z-index: 3;
+}
+.nav ul li:hover{
+    /* color: rgb(170, 45, 177); */
+    color: #e760f6;
+    top: -22px;
+    /* display: none; */
+    /* overflow: hidden; */
+    /* visibility: hidden; */
+    /* z-index: -1; */
+
+}
+.nav ul li:active{
+    color: #e760f6;
+}
+.nav ul li::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 20px;
+    /* left: 21px; */
+    margin: 2px -56px;
+
+}
+.nav ul .home::after{
+    content: "HOME";
+}
+.nav ul .about::after{
+    content: "ABOUT";
+    left: 56px;
+}
+.nav ul .servies::after{
+    content: "SERVIES";
+    left: 56px;
+}
+.nav ul .portifolio::after{
+    content: "PORTIFOLIO";
+    left: 56px;
+}
+.nav ul .contact::after{
+    content: "CONTACT";
+    left: 56px;
+}
+ .line{
+
+    /* background-color: rgb(59, 54, 54); */
+    background-color: rgb(44 45 64);
+    
+    width: 650;
+    height: 40px;
+    position: fixed;
+    top: -5px;
+    right: 68px;
+    z-index: 2;
+} 
+.end-line{
+    
+    /* background-color: rgb(59, 54, 54); */
+    background-color: rgb(44 45 64);
+    width: 650;
+    height: 19px;
+    position: fixed;
+    top: 57px;
+    right: 68px;
+    z-index: 2;
+
+} 
+     .head-logo{
+    display: inline-block;
+    color: #8dc8f6;
+    position: fixed;
+    top: 23px;
+    left: 26px;
+    font-size: 1.8rem;
+    transition: all 1.5s ease 0s;
+}
+.head-logo:hover{
+    
+    /* color: #3e6e92; */
+    opacity: 0.5;
+}
+
+.head-logo span{
+    color: rgb(184 11 66);
+    font-size: 2rem;
+    transition: all 1.5s ease 0s;
+}
+/* about page start */
+.about-page{
+    color: white;
+    position: relative;
+    top: 700px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: -1;
+}
+.about-head{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    /* font-size: 29px;*/
+    position: relative;
+    top: 100px;
+
+}
+.about-content{
+    position: relative;
+    width: 40%;
+    text-align: left;
+    left: 44%;
+    top: 117px;
+}
+.about-detail{
+    position: relative;
+    top: 127px;
+    left: 43.5%;
+    display: inline-block;
+}
+.about-detail>ul{
+    display: flex;
+
+}
+.about-detail>ul li{
+    margin: 10px;
+    list-style: none;
+}
+.about-education-detail{
+    position: relative;
+    width: 40%;
+    left: 45%;
+    top: 150;
+}
+.about-education-detail ul li{
+    padding: 10px;
+}
+.about-page img{
+    width: 19%;
+    position: relative;
+    top: -33vh;
+    left: 15%;
+    background-color: #2f2e3c;
+    height: auto;
+    border-radius: 15px;
+}
+/* social media icon black */
+.black-logo{
+    position: relative;
+    top: 48vh;
+    left: 11%;
+    display: inline-block;
+}
+
+.fa {
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    /* color: white; */
+    /* background-color: black; */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 8px;
+    /* box-shadow: 0px 0px 20px -3px #e9e8d9; */
+    margin: 5px;
+    background: #292930;
+    color: white;
+}
+
+/* .fa{
+    background: #292930;
+    color: white;
+}  */
+.fa-facebook:hover {
+        box-shadow: 0px 0px 20px 0px #e9e8d9;
+    background: #3B5998;
+    color: black;
+
+  } 
+    .fa-facebook {
+    border: 1px solid #3B5998;
+ } 
+  
+  
+  .fa-twitter:hover {
+    background: #55ACEE;
+     box-shadow: 0px 0px 20px 0px #e9e8d9;
+    color: black;
+  }
+  .fa-twitter{
+    border: 1px solid #55ACEE;
+
+  }
+  
+  
+  .fa-linkedin:hover {
+    background: #007bb5;
+     box-shadow: 0px 0px 20px 0px #e9e8d9;
+    color: black;
+  }
+  .fa-linkedin{
+    border: 1px solid #007bb5;
+
+  }
+  
+  .fa-youtube:hover {
+    background: #bb0000;
+     box-shadow: 0px 0px 20px 0px #e9e8d9;
+    color: black;
+  }
+  .fa-youtube{
+    border: 1px solid #bb0000;
+
+  }
+  
+  .fa-instagram:hover {
+    background: #125688;
+     box-shadow: 0px 0px 20px 0px #e9e8d9;
+    color: black;
+  }
+  .fa-instagram{
+    border: 1px solid #125688;
+
+  }

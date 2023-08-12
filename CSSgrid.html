@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        .contianer{
+            display: grid;
+            /* grid-template-columns: 200px auto 100px 400px ; */
+            /* grid-template-rows: 100px auto 200px; */
+            /* grid-template-rows: repeat(3, 8rem ); */
+            /* grid-template-columns: repeat(2,auto); */
+            /* grid-template-columns: ; */
+
+            /* grid-column-gap: 10px; */
+            /* grid-row-gap: 20px; */
+/* shortcut key of these both  */
+            grid-gap: 20px 10px;
+            /* grid-template-columns: 1fr 2fr 3fr; */
+            grid-template-rows: 1fr 2fr 3fr;
+            grid-template-columns: repeat(5,1fr);
+
+        .item:first-child{
+                /* grid-column-start: 1;
+                grid-column-end: 4; */
+                grid-row-start:     1;
+                grid-row-end: 3;
+
+                /* shortcut key of that  */
+                grid-column: 1/span 4;
+            }
+        
+        }
+        .item{
+            background-color: rgb(185, 141, 141);
+            /* width: 200px;
+            height: 30px; */
+            border: 2px solid red;
+            padding: 3px 7px;
+            margin: 5px 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contianer">
+        <div class="item">this is itam number-1</div>
+        <div class="item">this is itam number-2</div>
+        <div class="item">this is itam number-3</div>
+        <div class="item">this is itam number-4</div>
+        <div class="item">this is itam number-5</div>
+        <div class="item">this is itam number-6</div>
+        <div class="item">this is itam number-7</div>
+        <div class="item">this is itam number-8</div>
+        <div class="item">this is itam number-9</div>
+        <div class="item">this is itam number-10</div>
+        <div class="item">this is itam number-11</div>
+        <div class="item">this is itam number-12</div>
+        <div class="item">this is itam number-13</div>
+        <div class="item">this is itam number-14</div>
+        <div class="item">this is itam number-15</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,490 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satisfaction Survay</title>
+    <!-- icon link  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- progress bootrap link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style> 
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        input:hover{
+            opacity: 0.7;
+        }
+        .for:hover,.back:hover{
+            opacity: 0.7;
+        }
+        .head{
+            display: block;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 7vh;
+    font-size: 3vw;
+    color: white;
+    /* background: blue; */
+    /* width: 100%; */
+    /* height: 200;*/
+}
+.head-detail{
+    text-align: center;
+    position: relative;
+    top: 5vh;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-weight: lighter;
+    font-size: 2vw;
+    color: white;
+}
+#progress{
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 70px;
+    color: black;
+    font-size: 3vw;
+    
+}
+.progress-bar{
+     
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-color:transparent;
+    transition: width .6s ease;
+    position: relative;
+    top: 50px;
+
+}
+.progress-bar::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 210px;
+    z-index: -1;
+    background-color: #65c3c3;
+    /* position: relative; */
+    top: -163px;
+}
+.progress{
+    display: flex;
+    height: 20px;
+    overflow: hidden;
+    /* font-size: .7rem; */
+
+    background-color: white;
+    border-radius: 0.25rem;
+    position: relative;
+    top: 64px;
+    width: 86%;
+    /* left: 26%; */
+    left: 8%;
+}
+#progress::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    z-index: -2;
+
+    background-color: #e9ecef;
+    /* position: relative; */
+    top: -7vh;
+    left: 0;
+}
+.info-page{
+    position: relative;
+    top: 110px;
+    width: 90.8%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    left: 5%;
+}
+.personal-info{
+    text-transform: capitalize;
+    font-size: 3vw;
+    width: 100%;
+}
+.qs-date{
+    position: relative;
+    top: 83px;
+}
+.acept{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+.terms{
+    color: #1dbee9;
+}
+.btn-qs{
+    display: block;
+    text-align: center;
+}
+#choice{
+    width: 40px;
+    position: relative;
+    top: 2px;
+}
+.word{
+    text-align: center;
+    position: relative;
+    top: 120px;
+}
+.word::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    z-index: -2;
+
+    background-color: #e9ecef;
+    /* position: relative; */
+    top: -30px;
+    left: 0;
+}
+.for{
+    background-color: #adb4b4;
+    display: inline-block;
+    width: 125px;
+    font-weight: 400;
+    text-transform: uppercase;
+    height: 31px;
+    color: white;
+    padding: 3px 0px;
+}
+.back{
+    background-color: #383a3a;
+    display: inline-block;
+    width: 120;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 31px;
+    color: white;
+    padding: 3px 0px;
+}
+.back-icon{
+    font-size: 1rem;
+    position: relative;
+    left: 27px;
+    top: 2px;
+    color: white;
+}
+.for-icon{
+    position: relative;
+    top: 2px;
+    left: -24px;
+    color: white;
+    font-size: 1rem;
+}
+.info-page ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+}
+.info-page ul li{
+    margin: 12px;
+    width: 47%;
+}
+.info-page input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #dfdbdb;
+    box-shadow: 0px 0px 15px #b5aaaa;
+    text-transform: capitalize;
+}
+#country{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+
+    border: 1px solid #dfdbdb;
+    box-shadow: 0px 0px 15px #b5aaaa;
+    text-transform: capitalize;
+    color: #7b7777;
+    font-weight: 400;
+}
+#select{
+    width: 80px;
+    height: 40px;
+padding: 10px;
+border: 1px solid #dfdbdb;
+box-shadow: 0px 0px 15px #b5aaaa;
+text-transform: capitalize;
+color: #7b7777;
+font-weight: 400;
+}
+.icrement span{
+    margin: 15px;
+    font-weight: 700;
+    /* border: 1px solid #dfdbdb; */
+    text-shadow: 0px 0px 15px #020202;
+    text-transform: capitalize;
+}
+#age{
+    width: 80px;
+    position: relative;
+    top: -14px;
+    left: 0;
+}
+#male ,#female{
+    width: 40px;
+    box-shadow: none;
+    position: relative;
+    left: 10%;
+}
+#female{
+    left: 90px;
+}
+.male{
+    position: relative;
+    top: -13px;
+    left: 12%;
+    font-weight: 700;
+}
+ .female{
+    position: relative;
+    top: -58px;
+    left: 82%;
+    font-weight: 700;
+}
+/* media quries  */
+/* smart phone device */
+/* @media (max-width:440px){
+
+} */
+
+/* for all smart phone devices */
+@media only screen and (max-width:480px){
+    body{
+        /* background-color: blue; */
+    }
+    .for{
+        width: 35vw;
+    font-size: 4.5vw;
+    margin: 2px 0px;
+    }
+    .back{
+        width: 35vw;
+    font-size: 4.5vw;
+    margin: 0px 2px;
+    }
+    form{
+     width: 90%;
+    position: relative;
+    left: 5%;
+    } 
+    .info-page input {
+    width: 200%;
+    }
+    .personal-info{
+        position: relative;
+    left: 3%;
+    }
+    #country{
+        width: 200%;
+    }
+    .icrement span{
+        display: inline-block;
+    position: relative;
+    top: -7vh;
+    left: 89%;
+    width: 100%;
+    font-weight: 300;
+    }
+    .icrement{
+        height: 40px;
+    }
+    .female{
+        position: relative;
+    top: 1.5vh;
+    left: 52vw;
+    font-weight: 400;
+
+    }
+    #female{
+        position: relative;
+    top: 8vh;
+
+    left: -11vw;
+    }
+    .info-page input,#country,#select{
+        height: 6vh;
+        padding: 7px;
+    }
+    .male {
+        position: relative;
+    top: 6.4vh;
+    left: -16vw;
+    font-weight: 400;
+}
+.age-li{
+    width: 100%;
+    height: 5vh;
+    width: 100%;
+}
+#age-li{
+    width: 92%;
+
+}
+#male{
+    width: 40px;
+    box-shadow: none;
+    position: relative;
+    left: -17vw;
+    top: 8vh;
+}
+.qs-date {
+    position: relative;
+    top: 27vh;
+}
+}
+/* for all tablet devices */
+@media only screen and (min-width: 480px)and (max-width:1000px) {
+    body{
+        /* background-color: aqua; */
+    }
+    /* .container{
+        width: 60%;
+    } */
+     form{
+        width: 90%;
+    position: relative;
+    left: 5%;
+    } 
+    .female {
+    position: relative;
+    top: 24px;
+    left: -5%;
+    font-weight: 700;
+}
+
+.info-page ul li {
+    margin: 9px;
+    width: 47%;
+}
+.personal-info{
+        position: relative;
+    left: 1%;
+    }
+}
+/* for all laptop and computer devices and big for that  */
+@media(min-width:1000px){
+    body{
+        /* background-color: green; */
+    }
+    form{
+        width: 90%;
+    position: relative;
+    left: 5%;
+    } 
+    .personal-info{
+        position: relative;
+    left: 1%;
+    }
+
+}
+
+    </style>
+</head>
+<body>
+<!-- <div class="container"> -->
+    <form action="backend.php">
+
+   
+    <!-- head  -->
+    <h1 class="head">satisfaction survey</h1>
+    <h3 class="head-detail">help us to improve our servies and customer satisfaction</h3>
+    <!-- progress bar -->
+    <div class="progress-bar" style="position: relative;
+    top: -21px;">
+        <h2 id="progress">progress</h2>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+    </div>
+    <div class="info-page">
+
+        <span class="personal-info">enter your personal info</span>
+        <ul>
+            <li> <input type="text" name="name" id="first-name" placeholder="first name"></li>
+            <li><div class="country">
+                 <select name="country" id="country">
+                    <option value="select-country">select yout country</option>
+                    <option value="pakistan">pakistan</option>
+                    <option value="india">india</option>
+                    <option value="united kindom">united kindom</option>
+                </select>
+            </div></li>
+
+            <li> <input type="text" name="name" id="last-name" placeholder="Last Name"></li>
+            <li><div class="icrement">
+                <select name="select" id="select">
+                <option value="Yes">Yes</option>
+                <option value="None">None</option>
+
+            </select>
+           <span> Your incrementer</span>
+        </div></li>
+            <li><input type="email" name="email" id="email" placeholder="your email"></li>
+            <li class="age-li" id="age-li"> <input type="number" name="age" id="age" placeholder="Age">
+                <input type="radio" name="male" id="male"> <span class="male">Male</span>
+                <input type="radio" name="male" id="female"></li><span class="female">Female</span> 
+        </ul>
+       
+       
+        
+        <!-- country select  -->
+        
+        <!-- yes no option -->
+        
+       
+        </div>
+        <div class="qs-date">
+        <span class="acept">Do you accept <span class="terms">terms and conditions</span>?</span>
+
+        <!-- yes-no button -->
+             <div class="btn-qs">
+
+                 <span class="no">No</span>
+                 <!-- <label for="choice" >No</label> -->
+                 <input type="range" max="1" name="choice" id="choice">
+                 <span class="yes">Yes</span>
+                </div>
+            <!-- <label for="choice" aria-hidden="true">Yes</label> -->
+            
+            <div class="word">
+                <!-- backforward -->
+                <span class="material-symbols-outlined back-icon">
+                    arrow_back_ios
+                </span>
+                <span class="for">backward</span>
+                <span class="back">forward</span>
+                <!-- forward icon -->
+                <span class="material-symbols-outlined for-icon">
+                    arrow_forward_ios
+                </span>
+            </div>
+        </div>
+</form>
+<!-- </div> -->
+
+</body>
+</html>

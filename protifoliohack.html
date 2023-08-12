@@ -1,0 +1,177 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portifolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* background: lightgray; */
+        }
+        header{
+            width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    /* background: #f8f6f6; */
+    background-color: white;
+        }
+        header h1{
+            display: inline-block;
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    top: 26px;
+    left: 5%;
+        }
+        header ul{
+            display: flex;
+    width: 40%;
+    list-style: none;
+    position: relative;
+    top: -13px;
+    left: 40%;
+    padding: 0;
+        }
+        header ul li{
+            margin: 20;
+            text-transform: uppercase;
+        }
+        header button{
+            text-transform: capitalize;
+    font-size: 13px;
+    font-weight: 600;
+    width: 150px;
+    height: 33px;
+    background: red;
+    border: 2px solid red;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    top: -58px;
+    left: 84%;
+        }
+        /* content  */
+        .content{
+            position: relative;
+    top: 70px;
+    background: #ccd1e2;
+    /* height: 416px; */
+    height: 600px;
+    padding: 116px 0px;
+    overflow: hidden;
+        }
+        .my-pic{
+            width: 92%;
+    position: relative;
+    top: -220px;
+    left: 25%;
+    display: inline-block;
+        }
+        /* .content::after{
+            content: "";
+            position: absolute;
+            width: 50%;
+            background-image: url(/photo\ room\ without\ bg.png);
+        } */
+        .content .title{
+            font-size: 15px;
+    font-weight: 100;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 23%;
+    color: #ff0018;
+        }
+        .content .skill{
+            text-transform: capitalize;
+    display: inline-block;
+    width: 274px;
+    position: relative;
+    top: 109px;
+    left: 160px;
+    font-weight: 500;
+    font-size: 38px;
+    font-family: ui-monospace;
+        }
+        .content .detail{
+            display: inline-block;
+    width: 25%;
+    position: relative;
+    top: 228px;
+    left: -115px;
+    text-align: start;
+        }
+        .content button{
+            width: 110px;
+    height: 33px;
+    text-transform: capitalize;
+    background: red;
+    border: 1px solid red;
+    border-radius: 4px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    position: relative;
+    top: 284px;
+    left: -483px;
+    margin: 4px;
+        }
+        .content .hire{
+            background: none;
+            color: black;
+            transition: all 0.3s ease 0s;
+        }
+        .content .hire:hover{
+            background: red;
+    border: 1px solid red;
+    border-radius: 4px;
+    color: white;
+        }
+        /* video */
+        .my-video{
+
+            width: 100%;
+            position: relative;
+            top: -214px;
+            z-index: 0;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+         <h1>portifolio</h1>
+            <div class="nav">
+                <ul>
+                    <li class="1">HOME</li>
+                    <li class="2">ABOUT</li>
+                    <li class="3">SERVICES</li>
+                    <li class="4">Portifolio</li>
+                    <li class="5">PAGE</li>
+                    <li class="6">CONTACT</li>
+                </ul>
+            </div>
+                <button>get free consultent</button>
+        </header>
+        <!-- content -->
+        <div class="content">
+            <h2 class="title">get every single solutions.</h2>
+            <h1 class="skill">i,m Designer. tamur f.watson</h1>
+            <span class="detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, architecto exercitationem fugiat deserunt minus totam quisquam adipisci neque, labore dolorum repudiandae sequi dicta, libero quam possimus hic doloremque dolor ratione.</span>
+            <button class="learn">learn here</button>
+            <button class="hire">Hire Me</button>
+            <img src="/photo room without bg.png" alt="" class="my-pic">
+            <!-- <video src="/The Feeling Love Mashup 2022 _ Sidhu Moosewala _ Ap Dhillon _ B Praak _ Mahesh Suthar _ Sunny Hassan(360P).mp4" autoplay muted class="my-video"></video> -->
+        </div>
+    </div>
+</body>
+</html>

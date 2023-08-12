@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootsrap link css  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
+
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>3D Nav   </title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+        }
+        .li-list{
+            display: inline-block;
+            /* list-style: none; */
+            list-style-type: none;
+        }
+        .navbar{
+            position: fixed;
+
+        }
+        .li-list{
+            width: 85px;
+            height: 85px;
+            position: relative;
+        }
+        .text, .icon{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 86px;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 30px;
+            transition: all 0.2s ease-out;
+            cursor: pointer;
+
+        }
+        .icon{
+            background-color: #34465d;
+    color: #FFFC00;
+    transform-origin: 0 0; 
+
+        }
+        .text{
+            color: #34465d;
+            background-color:#FFFC00;
+            transform-origin: 0 0;
+            transform: rotateY(-90deg);
+
+        }
+        .li-list:hover .text{
+            transform: rotateY(0deg);
+}
+        .li-list:hover .icon{
+            transform: rotateY(90deg);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="ul-list">
+            <li class="li-list">
+                <spna class="icon"><span class="front fas fa-home"></span></spna>
+                <a href="#" class="text">Home</a>
+            </li>
+            <li class="li-list">
+                <spna class="icon"><span class="front fas fa-info"></span></spna>
+                <a href="#" class="text">About</a>
+            </li>
+            <li class="li-list">
+             <spna class="icon"> 
+                <span class="material-symbols-outlined">
+                    resume
+                </span>
+             </spna>
+                <a href="#" class="text">Servies</a>
+            </li>
+            <li class="li-list">
+                <spna class="icon"><span class="material-symbols-outlined">contact_page</span></spna>
+                <a href="#" class="text">Contact US</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

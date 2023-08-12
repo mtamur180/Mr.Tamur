@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munipul and DOM</title>
+</head>
+<body>
+    <div class="container" id="box">
+        <ul>
+             <li>home</li>
+             <li>home</li>
+             <li>home</li>
+             <li>home</li>
+             <li>home</li>
+        </ul>
+    </div>
+    
+    <script>
+        let container=document.getElementsByClassName('container');
+        console.log(container);
+
+        let sel=document.querySelectorAll('li');
+        console.log("selector returns",sel);
+    </script>
+</body>
+</html>

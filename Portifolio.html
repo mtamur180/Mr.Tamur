@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="Portifolio.css">
+    <!-- w3school icon of social media -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google icon link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+<body>
+    <!-- for all web -->
+<div class="container">
+
+    <!-- first page mean home -->
+        <div class="home" id="home">
+            <h4 class="skill">Web Developer, Video & Photo Editor</h4>
+            <div class="name">Hi, I'm <span class="tamur">Tamur </span>Hussain from <span class="pakistan">Pakistan</span> </div>
+            <div class="line"></div>
+        </div>
+        <!-- head logo -->
+        <div class="navbar-logo">
+
+            <div class="head-logo"><span>mt</span>amur180</div>
+            <div class="nav">
+                <!-- scrool navbar -->
+                <header class="scroll" id="scroll">
+                    <ul >
+                        <li date-hover="HOME" class="home">home</li>
+                        <li date-hover="ABOUT" class="about">About</li>
+                        <!-- <li><a href="https//self Introduction.html"></a>ABOUT</li> -->
+                        <li class="servies">Servies</li>
+                        <li class="portifolio">Portifolio</li>
+                        <li class="contact">Contact</li>
+                    </ul>
+                    <div class="end-line"></div>
+                    
+                </header>
+            </div> 
+            <span class="material-symbols-outlined menu-icon" id="menu-icon" onclick="toggleHide()" style="font-size: 35px;">
+                menu
+                </span>
+        </div>
+        <!-- black logo -->
+
+        <div class="black-logo">
+            <a href="#" class="fa fa-facebook" style="font-size: 1.5rem;"></a>
+            <a href="#" class="fa fa-twitter"style="font-size: 1.5rem;"></a>
+
+            <a href="#" class="fa fa-linkedin"style="font-size: 1.5rem;"></a>
+            <a href="#" class="fa fa-youtube"style="font-size: 1.5rem;"></a>
+            <a href="#" class="fa fa-instagram"style="font-size: 1.5rem;"></a>
+        </div>
+    
+        <!-- about page mean second page  -->
+        <div class="about-page">
+            <h1 class="about-head">about me</h1>
+            <div class="about-content">Highly Skilled and Detail-Oriented Web Developer with an experience in designing and developing dynamic and user- Friendly websites. Proficient in a wide range of programming languages, frameworks, and technologies, with a Strong Focus on delivering exceptional user experiences. committed to staying up-to-date with industry trends and Continuously Improving Skills to create innovative web solutions. Excellent Problem-Solving Abilities and a Collaborative Approach to Working With Cross-Functional Teams</div>
+            <div class="about-detail">
+                <ul>
+                    <li>Education</li>
+                    <li>Professional experience</li>
+                    <li>summary</li>
+                </ul>
+            </div>
+            <div class="about-education-detail">
+                <ul>
+                    <li class="date">2016-2020</li>
+                    <li class="school">zamindar collage, Gujrat</li>
+                    <li class="info">Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</li>
+                </ul>
+            </div>
+            
+            
+            <!-- <img src="/Picsart_23-01-23_22-13-56-021.jpg" alt=""> -->
+            <!-- <img src="/IMG_20230124_080659_601-removebg.png" alt=""> -->
+            <img src="/attitudepic.png" alt="">
+        </div>
+
+ </div>
+  <script>
+    // function toggleHide(){
+    //     let menu=document.getElementsByClassName('menu-icon');
+    //     let nav=document.getElementsByClassName('nav');
+    //     if(nav.style.display!='none'){
+    //         nav.style.display='none';
+    //     }
+    //     else{
+    //         nav.style.display='block'
+    //     }
+    // }
+    function toggleHide(){
+        let Menu=document.getElementById('menu-icon');
+        let list=document.getElementById('scroll');
+        if(list.style.display != 'none'){
+            list.style.display='none';
+        }
+        else{
+            list.style.display='block';
+        }
+    }
+  </script>
+</body>
+</html>
